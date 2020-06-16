@@ -1,0 +1,5 @@
+/data/
+/data/Trains/
+/data/Tests/
+.ipynb_checkpoints/
+/utils/__pycache__/
