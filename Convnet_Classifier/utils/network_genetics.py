@@ -159,7 +159,7 @@ class gene_aggregator(conv_layer_params, fc_layer_params):
                 self.convs[i]['shape_in'] = self.convs[i-1]['shape_out']
                 self.convs[i]['shape_out'] = self.get_conv_layer_shape_out(self.convs[i])
         
-class network_constructor(gene_aggregator):
+class network_constructor(gene_aggregator, nn.Module):
     
     def __init__(self):
         super().__init__()
